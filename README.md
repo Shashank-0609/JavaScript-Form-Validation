@@ -29,4 +29,5 @@ A responsive form validation project that prioritizes user experience built with
 
 ## Live Demo
 
-Live Demo on Netlify: https://https://formvalidationp.netlify.app
+Live Demo on Netlify: [https://https://formvalidationp.netlify.app
+](https://formvalidationp.netlify.app/)
