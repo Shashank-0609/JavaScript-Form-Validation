@@ -20,9 +20,6 @@ A responsive form validation project that prioritizes user experience built with
 - Bootstrap 5.3
 - Vanilla JavaScript
 
-## Screenshots
-
-(Add your screenshots of your form here if needed)
 
 ## How to run
 
