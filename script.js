@@ -61,7 +61,7 @@ function checkPassword(){
         return false;
     }
     else if(password.length<8){
-        window.alert("Password should not be less thant 8 characters, should include atleast one UpperCase and one special character");
+        window.alert("Password should not be less than 8 characters, should include atleast one UpperCase and one special character");
         return false;
     }
     else{
