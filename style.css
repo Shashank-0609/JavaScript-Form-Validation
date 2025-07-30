@@ -19,12 +19,9 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-div{
-    margin-top: 20px;
-}
 
 #myForm{
-    width: 60%;
+    width: 80%;
     margin: 20px 30px;
     padding: 20px;
     border-radius: 10px;
@@ -38,6 +35,65 @@ div{
     color: black;
 }
 
+.selectGender{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.selectGender .genderOptions{
+    display: inline-flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.courses select{
+    border-radius: 8px;
+    padding: 6px;
+    width: 80%;
+    outline: none;
+}
+
+.courses select option{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+}
+
+.branches select{
+    border-radius: 8px;
+    padding: 6px;
+    width: 259px;
+    outline: none;
+}
+
+.branches select option{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+}
+
+.branches #branchSel{
+    color: white;
+}
+
+.year{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+}
+.year .years .yearOption label{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.year .years .yearOption input{
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+}
+
 #myForm .confirm #conPw{
     color: white;
 }
@@ -46,8 +102,26 @@ div{
     color: white;
 }
 
-#myForm .phone #num{
-    color: white;
+.pwIcon{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.ci{
+    cursor: pointer;
+    color: hsl(0, 0%, 50%);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.fa-solid{
+    cursor: pointer;
+    color: hsl(0, 0%, 50%);
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }
 
 input{
@@ -68,24 +142,75 @@ input{
     margin-top: 10px;
 }
 
+.terms
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.terms input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Tablet devices (portrait and smaller) */
 @media (max-width: 768px) {
+    #heading {
+        font-size: 3rem;
+    }
+
     #myForm {
         width: 90%;
-        margin: 10px;
+        margin: 10px auto;
         padding: 15px;
     }
 
-    #myForm label {
-        font-size: 1.1rem;
+    #myForm label,
+    .year .years .yearOption label,
+    .branches select option,
+    .courses select option {
+        font-size: 1rem;
+    }
+
+    input,
+    .branches select,
+    .courses select {
+        font-size: 1rem;
+        padding: 5px;
     }
 
     .btn {
         width: 100%;
         margin-top: 15px;
     }
-    
-    input {
-        font-size: 1rem;
+
+    .selectGender {
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .selectGender .genderOptions {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .year {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .terms {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 5px;
+        font-size: 0.6rem;
     }
 
     body {
@@ -93,3 +218,72 @@ input{
     }
 }
 
+/* Mobile devices (very small screens) */
+@media (max-width: 480px) {
+    #heading {
+        font-size: 2rem;
+    }
+
+    #myForm {
+        padding: 10px;
+    }
+
+    #myForm label {
+        font-size: 0.9rem;
+    }
+
+    input,
+    select {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 8px;
+        background-color: green;
+        color: white;
+    }
+
+    .fa-solid,
+    .ci {
+        right: 5px;
+        top: 5px;
+        font-size: 1rem;
+    }
+}
+
+/* screen size of 360px and below */
+@media (max-width: 360px) {
+    #heading {
+        font-size: 1.5rem;
+    }
+
+    #myForm {
+        width: 100%;
+        padding: 5px;
+    }
+
+    input,
+    select {
+        font-size: 0.8rem;
+        padding: 4px;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 6px;
+    }
+
+    .fa-solid,
+    .ci {
+        right: 3px;
+        top: 3px;
+        font-size: 0.9rem;
+    }
+    .branches select{
+        width: 100%;
+    }
+    .courses select{
+        width: 100%;
+    }
+}
