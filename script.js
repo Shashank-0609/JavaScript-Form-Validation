@@ -103,3 +103,24 @@ function checkForm(){
         return false;
     }
 }
+
+const currentPassword = document.querySelector("#currentPassword");
+const confirmPassword = document.querySelector("#confirmPassword");
+
+function showPassword(){
+    if(currentPassword.type === "password"){
+        currentPassword.type = "text"; 
+    }
+    else{
+        currentPassword.type = "password";
+    }
+}
+
+function confirmShowPassword(){
+    if(confirmPassword.type === "password"){
+        confirmPassword.type = "text"; 
+    }
+    else{
+        confirmPassword.type = "password";
+    }
+}
