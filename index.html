@@ -42,7 +42,7 @@
             <!-- div for college Name -->
             <div class="clgName" style="margin-top: 20px;">
                 <label for="clg" id="clg">College Name:</label>
-                <input type="text" placeholder="Enter your college name" id="collegeName" style="font-size: 1.3rem;">
+                <input type="text" placeholder="Enter your college name" id="collegeName">
             </div>
             <!-- div for branches -->
             <div class="branches" style="margin-top: 20px;">
@@ -61,19 +61,19 @@
              <div class="year">
                 <div class="years">
                     <div class="yearOption">
-                        <input type="radio" name="yearOfStudy" id="firstYear">
+                        <input type="radio" name="yearOfStudy" id="firstYear" required>
                         <label for="firstYear" id="firstYearLabel" style="color: white;">I</label>
                     </div>
                     <div class="yearOption">
-                        <input type="radio" name="yearOfStudy" id="secondYear">
+                        <input type="radio" name="yearOfStudy" id="secondYear" required>
                         <label for="secondYear" id="secondYearLabel" style="color: white;">II</label>
                     </div>
                     <div class="yearOption">
-                        <input type="radio" name="yearOfStudy" id="thirdYear">
+                        <input type="radio" name="yearOfStudy" id="thirdYear" required>
                         <label for="thirdYear" id="thirdYearLabel" style="color: white;">III</label>
                     </div>
                     <div class="yearOption">
-                        <input type="radio" name="yearOfStudy" id="fourthYear">
+                        <input type="radio" name="yearOfStudy" id="fourthYear" required>
                         <label for="fourthYear" id="fourthYearLabel" style="color: white;">IV</label>
                     </div>
                 </div>
@@ -115,6 +115,8 @@
             </div>
             <!-- submit button -->
             <button type="submit" class="btn btn-success" style="margin-top: 20px;">Submit Form</button>
+            <!-- reset form button -->
+             <button type="reset" class="btn btn-primary">Reset Form</button>
          </form>
      </div>
     <script src="script.js"></script>
